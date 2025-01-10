@@ -28,7 +28,7 @@ Via `lazy.nvim`:
 
 ```lua
 {
-    'loganswartz/dap-path-mapper',
+    'loganswartz/dap-path-mapper.nvim',
     dependencies = 'mfussenegger/nvim-dap',
     config = true,
 }
@@ -45,7 +45,7 @@ look like this if we were using that plugin:
 
 ```lua
 {
-    'loganswartz/dap-path-mapper',
+    'loganswartz/dap-path-mapper.nvim',
     dependencies = {
         'mfussenegger/nvim-dap',
         'mfussenegger/nvim-dap-python',
@@ -62,7 +62,7 @@ method for `nvim-dap`, an alternative solution like this would also work:
     'mfussenegger/nvim-dap',
     dependencies = {
         'mfussenegger/nvim-dap-python',
-        'loganswartz/dap-path-mapper',
+        'loganswartz/dap-path-mapper.nvim',
     },
     config = function()
         local dap = require('nvim-dap')
